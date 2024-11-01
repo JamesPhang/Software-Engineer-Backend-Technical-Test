@@ -1,0 +1,6 @@
+Question 4:
+If you use the same PreAuthorize configuration on each method in a class, how can you
+make the annotations cleaner?
+
+Answer : To prevent any same PreAuthorize configuration, should be apply it as a class level annotation instead of 
+        apply the PreAuthorize in every method that under the same class 

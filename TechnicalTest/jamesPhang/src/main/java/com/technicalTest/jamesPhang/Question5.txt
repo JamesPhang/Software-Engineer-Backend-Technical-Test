@@ -1,0 +1,27 @@
+Question 5:
+Given tables below:
+Table: players
+Player_no Name
+1 Alan
+2 James
+3 Alan
+4 Bob
+Table: scores
+Player_no Sport Score
+3 Chess 10
+3 Swimming 20
+2 Swimming 10
+1 Swimming 5
+Write Sql to show result below:
+Name Sport Total Score
+Alan Swimming 20
+James Swimming 10
+Alan Chess 10
+Alan Swimming 5
+
+Answer SQL Statement : 
+
+SELECT players.Name, scores.Sport, scores.Score totalScore
+FROM players 
+JOIN scores on players.Player_no = scores.Players_no
+ORDER by totalScore desc
